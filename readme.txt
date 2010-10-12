@@ -1,6 +1,6 @@
 === Stipple ===
 Contributors: stipple
-Tags: stipple, picture labeling, picture, image, annotation, annotate
+Tags: stipple, stippleit, picture labeling, picture, label, labels, image, annotation, annotate, annotations
 Requires at least: 2.7
 Tested up to: 3.0.1
 Stable tag: trunk 
@@ -13,11 +13,11 @@ Stipple is the fastest way to label and share the content of photos on your site
 
 == Installation ==
 
-1. If you have added Stipple previously directly to your Wordpress templates, first remove what was added for that installation.
-1. [Sign-up](https://stippleit.com/signup) for a Stipple account, or [login](https://stippleit.com/login) if you already have one, and add a site within your account for your Wordpress blog. Make sure your blog's URL is added to the site. Refer to Screnshot #1 for more information.
-1. Upload the `stipple` folder to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. In the plugin settings, add your site id from the site you created in Step 2. You can find the site id on your dashboard at the Stipple website. See Screenshot #2 for more information.
+1. If you have added Stipple previously directly to your Wordpress templates, first remove what was added to your templates. You do not need to remove your site at the Stipple website.
+1. [Sign-up](https://stippleit.com/signup) for a Stipple account, or [login](https://stippleit.com/login) if you already have one, and add a site within your account for your Wordpress blog. Make sure your blog's URL is added to the site. Refer to Screenshot #2 for more information.
+1. Upload this directory to the `/wp-content/plugins/` directory.
+1. Activate the plugin through the 'Plugins' menu in WordPress.
+1. In the plugin settings, add your site id from the site you created in Step 2. You can find the site id on your dashboard at the Stipple website. See Screenshot #3 for more information.
 1. For advanced use, you can use a custom `STIPPLE.load` call, though this isn't required.
 
 == Frequently Asked Questions ==
@@ -25,6 +25,10 @@ Stipple is the fastest way to label and share the content of photos on your site
 = Does Stipple work on pictures within a Flash slideshow?  =
 
 Unfortunately, no. Due to the nature of the Flash platform, Stipple will not work on images shown within a flash slideshow or image gallery. Stipple can still be used on other pictures on the same page, though.
+
+= Does Stipple work on images that are inline with text?
+
+Stipple will not work on these images very well, at least in a way that looks good. This is due to the fact that inline images 'cheat', and let text flow around them, but also pretend to have no height or width, which makes it impossible for Stipple to work. We recommend not using inline images for those pictures you want to add Stipple Dots to.
 
 == Screenshots ==
 
@@ -34,6 +38,10 @@ Unfortunately, no. Due to the nature of the Flash platform, Stipple will not wor
 3. The same shot as the previous, highlighting the site_id.
 
 == Changelog ==
+
+= 0.2 =
+* Config UI tweaks and cleanups
+* README tweaks.
 
 = 0.1 =
 * Initial release.
