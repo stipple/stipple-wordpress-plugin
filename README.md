@@ -1,4 +1,4 @@
-# Plugin Name
+# Stipple
 Contributors: stipple
 Tags: stipple, picture labeling, picture, image, annotation, annotate
 Requires at least: 2.7
