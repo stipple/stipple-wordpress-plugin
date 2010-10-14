@@ -1,9 +1,10 @@
 === Stipple ===
 Contributors: stipple
+Donate link: http://stippleit.com
 Tags: stipple, stippleit, picture labeling, picture, label, labels, image, annotation, annotate, annotations
 Requires at least: 2.7
 Tested up to: 3.0.1
-Stable tag: trunk 
+Stable tag: 0.2 
 
 Enable Stipple on your Wordpress blog.
 
@@ -15,8 +16,7 @@ Stipple is the fastest way to label and share the content of photos on your site
 
 1. If you have added Stipple previously directly to your Wordpress templates, first remove what was added to your templates. You do not need to remove your site at the Stipple website.
 1. [Sign-up](https://stippleit.com/signup) for a Stipple account, or [login](https://stippleit.com/login) if you already have one, and add a site within your account for your Wordpress blog. Make sure your blog's URL is added to the site. Refer to Screenshot #2 for more information.
-1. Download and unzip the plugin. Rename the unzipped directory to 'stipple'.
-1. Upload this directory to the `/wp-content/plugins/` directory.
+1. Download and install the Stipple plugin from the WordPress plugin installer, or download manually, and upload to `/wp-content/plugins/stipple`.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 1. In the plugin settings, add your site id from the site you created in Step 2. You can find the site id on your dashboard at the Stipple website. See Screenshot #3 for more information.
 1. For advanced use, you can use a custom `STIPPLE.load` call, though this isn't required.
@@ -47,9 +47,17 @@ Stipple will not work on these images very well, at least in a way that looks go
 = 0.1 =
 * Initial release.
 
+== Upgrade Notice ==
+
+= 0.2 =
+* Initial stable release.
+
 == License ==
 
 Copyright 2010  Stipple  (email : stippletech@stippleit.com)
+
+For support, please start a conversation at Get Satisfaction:
+http://getsatisfaction.com/stipple or email stippletech@stippleit.com
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as 
