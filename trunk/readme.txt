@@ -27,7 +27,7 @@ Stipple is the fastest way to label and share the content of photos on your site
 
 Unfortunately, no. Due to the nature of the Flash platform, Stipple will not work on images shown within a flash slideshow or image gallery. Stipple can still be used on other pictures on the same page, though.
 
-= Does Stipple work on images that are inline with text?
+= Does Stipple work on images that are inline with text? =
 
 Stipple will not work on these images very well, at least in a way that looks good. This is due to the fact that inline images 'cheat', and let text flow around them, but also pretend to have no height or width, which makes it impossible for Stipple to work. We recommend not using inline images for those pictures you want to add Stipple Dots to.
 
