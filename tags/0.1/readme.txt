@@ -1,10 +1,10 @@
 === Stipple ===
 Contributors: stipple
 Donate link: http://stippleit.com
-Tags: stipple, stippleit, picture labeling, picture, label, labels, image, annotation, annotate, annotations, picture, label, tag
+Tags: stipple, stippleit, picture labeling, picture, label, labels, image, annotation, annotate, annotations
 Requires at least: 2.7
 Tested up to: 3.0.1
-Stable tag: 0.2.1 
+Stable tag: 0.1 
 
 Enable Stipple on your Wordpress blog.
 
