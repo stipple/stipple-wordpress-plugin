@@ -68,7 +68,7 @@ Stipple will not work on these images very well, at least in a way that looks go
 
 == License ==
 
-Copyright 2010  Stipple  (email : stippletech@stippleit.com)
+Copyright 2010-2011  Stipple  (email : stippletech@stippleit.com)
 
 For support, please start a conversation at Get Satisfaction:
 http://getsatisfaction.com/stipple or email stippletech@stippleit.com
