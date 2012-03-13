@@ -3,7 +3,7 @@
     Plugin Name: Stipple
     Plugin URI: http://stippleit.com/s/wordpress
     Description: Stipple is the fastest way to label your pictures.
-    Version: 0.3.4
+    Version: 0.4.2
     Author: Stipple Team - stippletech@stippleit.com
     Author URI: http://stippleit.com
     License: GPL2
