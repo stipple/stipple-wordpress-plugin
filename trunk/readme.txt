@@ -4,7 +4,7 @@ Donate link: http://stippleit.com
 Tags: stipple, stippleit, picture labeling, picture, label, labels, image, annotation, annotate, annotations, picture, label, tag, dot
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 0.4.2
+Stable tag: 0.4.3
 
 Add your Wordpress blog to the Stipple Network.
 
@@ -42,6 +42,9 @@ Stipple will not work on these images very well, at least in a way that looks go
 4. The Stipple plugin settings.
 
 == Changelog ==
+
+= 0.4.3 =
+* Fix dumb error.
 
 = 0.4.2 =
 * Always use Cachefly to serve js, as it now supports SSL.
