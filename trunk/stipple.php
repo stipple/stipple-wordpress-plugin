@@ -77,17 +77,18 @@
   }
 
   function stipple_validate($v) {
-    $v['site_id'] =  wp_filter_nohtml_kses($v['site_id']);
+    $out = array();
+    $out['site_id'] =  wp_filter_nohtml_kses($v['site_id']);
     switch($v['custom_stipple_load']) {
       case 0:
       case 1:
       case 2:
         break;
       default:
-        $v['custom_stipple_load'] = 0;
+        $out['custom_stipple_load'] = 0;
     }
 
-    return $v;
+    return $out;
   }
 
 ?>
