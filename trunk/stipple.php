@@ -88,6 +88,7 @@
       default:
         $out['custom_stipple_load'] = 0;
     }
+    $out['custom_stipple_load_data'] = isset( $v['custom_stipple_load_data'] ) ? wp_filter_nohtml_kses( $v['custom_stipple_load_data'] ) : '';
 
     return $out;
   }
