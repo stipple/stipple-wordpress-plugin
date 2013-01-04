@@ -42,8 +42,7 @@
   }
 
   function stipple_enable() {
-    $plugin_path = WP_PLUGIN_URL . '/' .
-      str_replace(basename(__FILE__), "", plugin_basename(__FILE__));
+    $plugin_path = plugins_url( '/', __FILE__ );
 
     wp_enqueue_script('stipple',
       $plugin_path . 'js/async_init.js',
