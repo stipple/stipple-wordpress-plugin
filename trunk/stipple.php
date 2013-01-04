@@ -78,11 +78,12 @@
 
   function stipple_validate($v) {
     $out = array();
-    $out['site_id'] =  wp_filter_nohtml_kses($v['site_id']);
+    $out['site_id'] = isset( $v['site_id'] ) ? wp_filter_nohtml_kses( $v['site_id'] ) : '';
     switch($v['custom_stipple_load']) {
       case 0:
       case 1:
       case 2:
+        $out['custom_stipple_load'] = $v['custom_stipple_load'];
         break;
       default:
         $out['custom_stipple_load'] = 0;
