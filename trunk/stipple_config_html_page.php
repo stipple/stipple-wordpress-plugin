@@ -48,7 +48,7 @@ EOS;
         <th scope="row"><input id="stipple-no-custom-load" name="stipple_options[custom_stipple_load]" type="radio" value="0" <?php checked('0', $opts['custom_stipple_load']); ?> onclick="document.getElementById('stipple_site_id').disabled = false;document.getElementById('stipple_custom_load_data').disabled = true;" /> <label for="stipple-no-custom-load">Load Stipple with Site ID:</label></th>
         <td>
           <input name="stipple_options[site_id]" type="text" id="stipple_site_id"
-          value="<?php _e($opts['site_id']); ?>" <?php disabled(Array('1', '2'), $opts['custom_stipple_load']); ?> />
+          value="<?php echo esc_attr( $opts['site_id'] ); ?>" <?php disabled(Array('1', '2'), $opts['custom_stipple_load']); ?> />
           (e.g. 2XnALR)
         </td>
       </tr>
@@ -56,7 +56,7 @@ EOS;
       <tr valign="top">
         <th scope="row"><input id="stipple-use-custom-load" name="stipple_options[custom_stipple_load]" type="radio" value="1" <?php checked('1', $opts['custom_stipple_load']); ?> onclick="document.getElementById('stipple_site_id').disabled = true;document.getElementById('stipple_custom_load_data').disabled = false;"/> <label for="stipple-use-custom-load">Use Custom <code>STIPPLE.load</code>:</label></th>
         <td>
-          <textarea id="stipple_custom_load_data" rows="8" cols="26" name="stipple_options[custom_stipple_load_data]" <?php disabled(Array('0', '2'), $opts['custom_stipple_load']); ?>><?php _e($stipple_load); ?></textarea>
+          <textarea id="stipple_custom_load_data" rows="8" cols="26" name="stipple_options[custom_stipple_load_data]" <?php disabled(Array('0', '2'), $opts['custom_stipple_load']); ?>><?php echo esc_html( $stipple_load ); ?></textarea>
         </td>
       </tr>
 
