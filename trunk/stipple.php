@@ -26,10 +26,10 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
   */
 
-  include 'stipple_config_html_page.php';
+  include dirname( __FILE__ ) . '/stipple_config_html_page.php';
 
   register_deactivation_hook(__FILE__, 'stipple_deactivate' );
-  add_action('wp_print_scripts', 'stipple_enable');
+  add_action('wp_enqueue_scripts', 'stipple_enable');
 
   /* admin settings setup */
   if ( is_admin() ) {
@@ -42,8 +42,7 @@
   }
 
   function stipple_enable() {
-    $plugin_path = WP_PLUGIN_URL . '/' .
-      str_replace(basename(__FILE__), "", plugin_basename(__FILE__));
+    $plugin_path = plugins_url( '/', __FILE__ );
 
     wp_enqueue_script('stipple',
       $plugin_path . 'js/async_init.js',
@@ -69,7 +68,7 @@
   }
 
   function stipple_admin_menu() {
-    add_options_page('Stipple Configuration', 'Stipple', 'administrator',
+    add_options_page('Stipple Configuration', 'Stipple', 'manage_options',
     'stipple', 'stipple_config_html_page');
   }
 
@@ -78,17 +77,20 @@
   }
 
   function stipple_validate($v) {
-    $v['site_id'] =  wp_filter_nohtml_kses($v['site_id']);
+    $out = array();
+    $out['site_id'] = isset( $v['site_id'] ) ? wp_filter_nohtml_kses( $v['site_id'] ) : '';
     switch($v['custom_stipple_load']) {
       case 0:
       case 1:
       case 2:
+        $out['custom_stipple_load'] = $v['custom_stipple_load'];
         break;
       default:
-        $v['custom_stipple_load'] = 0;
+        $out['custom_stipple_load'] = 0;
     }
+    $out['custom_stipple_load_data'] = isset( $v['custom_stipple_load_data'] ) ? wp_filter_nohtml_kses( $v['custom_stipple_load_data'] ) : '';
 
-    return $v;
+    return $out;
   }
 
 ?>
