@@ -29,7 +29,7 @@
   include dirname( __FILE__ ) . '/stipple_config_html_page.php';
 
   register_deactivation_hook(__FILE__, 'stipple_deactivate' );
-  add_action('wp_print_scripts', 'stipple_enable');
+  add_action('wp_enqueue_scripts', 'stipple_enable');
 
   /* admin settings setup */
   if ( is_admin() ) {
