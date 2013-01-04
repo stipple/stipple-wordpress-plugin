@@ -69,7 +69,7 @@
   }
 
   function stipple_admin_menu() {
-    add_options_page('Stipple Configuration', 'Stipple', 'administrator',
+    add_options_page('Stipple Configuration', 'Stipple', 'manage_options',
     'stipple', 'stipple_config_html_page');
   }
 
