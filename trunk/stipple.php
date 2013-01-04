@@ -26,7 +26,7 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
   */
 
-  include 'stipple_config_html_page.php';
+  include dirname( __FILE__ ) . '/stipple_config_html_page.php';
 
   register_deactivation_hook(__FILE__, 'stipple_deactivate' );
   add_action('wp_print_scripts', 'stipple_enable');
